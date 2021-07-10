@@ -12,31 +12,30 @@ app = typer.Typer()
 
 
 def startup():
-    title = f"""{log.Color.cyan}
+    title = f"""
  ███╗   ███╗ ██████╗███████╗███╗   ██╗██╗██████╗ ███████╗██████╗ \
- {log.Color.blue}██████╗ {log.Color.blue}██{log.Color.blue}╗  {log.Color.blue}\
+ ██████╗██╗  \
  ██╗
  ████╗ ████║██╔════╝██╔════╝████╗  ██║██║██╔══██╗██╔════╝██╔══██╗\
- {log.Color.blue}██╔══{log.Color.blue}██╗╚{log.Color.blue}██{log.Color.blue}╗\
- {log.Color.blue}██╔╝
+ ██╔══██╗╚██╗\
+ ██╔╝
  ██╔████╔██║██║     ███████╗██╔██╗ ██║██║██████╔╝█████╗  ██████╔╝\
- {log.Color.blue}██{log.Color.blue}████╔╝ ╚{log.Color.blue}████╔╝
+ ██████╔╝ ╚████╔╝
  ██║╚██╔╝██║██║     ╚════██║██║╚██╗██║██║██╔═══╝ ██╔══╝  ██╔══██╗\
- {log.Color.blue}█{log.Color.blue}█╔═══╝   ╚{log.Color.blue}██╔╝
+ ██╔═══╝   ╚██╔╝
  ██║ ╚═╝ ██║╚██████╗███████║██║ ╚████║██║██║     ███████╗██║  ██║\
- {log.Color.blue}██║        {log.Color.blue}██║
+ ██║        ██║
  ╚═╝     ╚═╝ ╚═════╝╚══════╝╚═╝  ╚═══╝╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝\
  ╚═╝        ╚═╝
 """
     lines = "╗║╔═╝╚"
     for line_type in lines:
         title = title.replace(
-            line_type, f"{log.Color.white}%s{log.Color.cyan}" % line_type)
-    print(title)
-    print(f"{log.Color.cyan}Created by Kqzz#0001")
+            line_type, f"{log.Color.white}%s" % line_type)
+    print(f"Created by Kqzz#0001")
     print(
         "Git: github.com/MCSniperPY/MCsniperPY | "
-        f"Discord: https://mcsniperpy.com/discord{log.Color.white}"
+        f"Discord: https://mcsniperpy.com/discord"
     )
 
 
